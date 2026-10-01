@@ -1,0 +1,49 @@
+{
+  "status": "synthetic",
+  "basis": "Original layout example only",
+  "assets": {
+    "alpha": {
+      "name": "Alpha",
+      "source": "Original synthetic glyph authored for this skill",
+      "license_note": "Original example asset; no third-party brand mark",
+      "original_sha256": "f21a6deb03c57f4ad23d7aba503cea1d3dc514d61bd1e272228ced60398d25e5",
+      "normalized_sha256": "e9ccf5fab1499b286c4798383eab225aee0617f41c4150467aed297d5b53d3d1",
+      "viewbox_width": 24.0,
+      "viewbox_height": 24.0,
+      "normalization": "explicit intrinsic dimensions, maximum 256px; viewBox/geometry/colors retained"
+    },
+    "beta": {
+      "name": "Beta",
+      "source": "Original synthetic glyph authored for this skill",
+      "license_note": "Original example asset; no third-party brand mark",
+      "original_sha256": "9e4c54e991f3c69498b8eed61b720105fadaa4bc655be07873fe9918ba2ef083",
+      "normalized_sha256": "53c9f2d79ef644204504d45ef3b4fc08648cc286e8de079cbf46a9bbd099ec37",
+      "viewbox_width": 24.0,
+      "viewbox_height": 24.0,
+      "normalization": "explicit intrinsic dimensions, maximum 256px; viewBox/geometry/colors retained"
+    },
+    "gamma": {
+      "name": "Gamma",
+      "source": "Original synthetic glyph authored for this skill",
+      "license_note": "Original example asset; no third-party brand mark",
+      "original_sha256": "05ee7d5f4491a2b9d9b1b373c7a8ad1cfd315d15919026e557beb8d639e2620c",
+      "normalized_sha256": "3ab407671c744fdf08d9e2c68763639d11e80ae7ff1266e3a0f5809b8ce132e3",
+      "viewbox_width": 24.0,
+      "viewbox_height": 24.0,
+      "normalization": "explicit intrinsic dimensions, maximum 256px; viewBox/geometry/colors retained"
+    },
+    "delta": {
+      "name": "Delta",
+      "source": "Original synthetic glyph authored for this skill",
+      "license_note": "Original example asset; no third-party brand mark",
+      "original_sha256": "b4fb4eafa4ec155b1a5b986cbb1ee84b99b9162f8cafdd11b3f36197bd6fd73c",
+      "normalized_sha256": "94c89ed03ae840187b5453beca4ab9be7658bbed19a4c09277c51363b6d08e38",
+      "viewbox_width": 24.0,
+      "viewbox_height": 24.0,
+      "normalization": "explicit intrinsic dimensions, maximum 256px; viewBox/geometry/colors retained"
+    }
+  },
+  "nodes": 4,
+  "edges": 4,
+  "pixel_inspection": "required"
+}
