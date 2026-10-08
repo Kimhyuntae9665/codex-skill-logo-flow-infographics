@@ -1,0 +1,54 @@
+{
+  "title": "Proposed build and check release inputs",
+  "status": "proposed",
+  "basis": "Authored documentation example only; no project or deployment inspected.",
+  "description": "GitHub source feeds a proposed Vite build and Python checks. Build artifacts and a successful check result are inputs to preparing a Docker image. Arrows are release inputs, not CI triggers; no runner or deployment target is shown.",
+  "asset_manifest": "../assets/manifest.json",
+  "width": 1040,
+  "height": 510,
+  "nodes": [
+    {
+      "id": "repo",
+      "asset": "github",
+      "x": 90,
+      "y": 190
+    },
+    {
+      "id": "build",
+      "asset": "vite",
+      "x": 460,
+      "y": 95
+    },
+    {
+      "id": "check",
+      "asset": "python",
+      "x": 460,
+      "y": 285
+    },
+    {
+      "id": "image",
+      "asset": "docker",
+      "x": 830,
+      "y": 190
+    }
+  ],
+  "edges": [
+    {
+      "source": "repo",
+      "target": "build"
+    },
+    {
+      "source": "repo",
+      "target": "check"
+    },
+    {
+      "source": "build",
+      "target": "image"
+    },
+    {
+      "source": "check",
+      "target": "image"
+    }
+  ],
+  "disclaimer": "Proposed example / no deployed architecture"
+}

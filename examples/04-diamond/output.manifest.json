@@ -1,0 +1,49 @@
+{
+  "status": "proposed",
+  "basis": "Authored documentation example only; no project or deployment inspected.",
+  "assets": {
+    "python": {
+      "name": "Python",
+      "source": "https://raw.githubusercontent.com/simple-icons/simple-icons/98820a4dc8c363ca72fa2c0d294ea4a0a9bba75d/icons/python.svg",
+      "license_note": "CC0-1.0 upstream artwork/repository license; third-party trademarks remain with their owners. No endorsement implied. Official inspected SVG includes metadata outside helper subset; unmodified monochrome Simple Icons variant selected.",
+      "original_sha256": "ad9468e1c4903f73ae7eebfbe980f0f727a10db695be3d914e7d8bd25356a862",
+      "normalized_sha256": "caf60c3c1b617d31143258a6026aec87bc5166271538b7e6fc6968b72b1d8fab",
+      "viewbox_width": 24.0,
+      "viewbox_height": 24.0,
+      "normalization": "explicit intrinsic dimensions, maximum 256px; viewBox/geometry/colors retained"
+    },
+    "sqlite": {
+      "name": "SQLite",
+      "source": "https://raw.githubusercontent.com/simple-icons/simple-icons/98820a4dc8c363ca72fa2c0d294ea4a0a9bba75d/icons/sqlite.svg",
+      "license_note": "CC0-1.0 upstream artwork/repository license; third-party trademarks remain with their owners. No endorsement implied. Usable official standalone SVG not established in this pass. Unmodified Simple Icons variant selected.",
+      "original_sha256": "71d4153bc9661dfe6b92dad70f737ec2b6c7c839311e502b4ca66fe664fe12b6",
+      "normalized_sha256": "b8dd4d0bb7ce19e0211f5645c09eacbbc280358f084a57e11e65aacb3282eb57",
+      "viewbox_width": 24.0,
+      "viewbox_height": 24.0,
+      "normalization": "explicit intrinsic dimensions, maximum 256px; viewBox/geometry/colors retained"
+    },
+    "qdrant": {
+      "name": "Qdrant",
+      "source": "https://raw.githubusercontent.com/simple-icons/simple-icons/98820a4dc8c363ca72fa2c0d294ea4a0a9bba75d/icons/qdrant.svg",
+      "license_note": "CC0-1.0 upstream artwork/repository license; third-party trademarks remain with their owners. No endorsement implied. Inspected official logo is a horizontal wordmark lockup; unmodified standalone Simple Icons variant selected.",
+      "original_sha256": "c5fbbbf771648975f22973627b4eb5620c68a4f81ccfb6c21633bb1d04f9fdf1",
+      "normalized_sha256": "b54bf15116a099a5aeee909b98bfd2247314a3905bc9530459eac1d91fb251c9",
+      "viewbox_width": 24.0,
+      "viewbox_height": 24.0,
+      "normalization": "explicit intrinsic dimensions, maximum 256px; viewBox/geometry/colors retained"
+    },
+    "fastapi": {
+      "name": "FastAPI",
+      "source": "https://raw.githubusercontent.com/simple-icons/simple-icons/98820a4dc8c363ca72fa2c0d294ea4a0a9bba75d/icons/fastapi.svg",
+      "license_note": "CC0-1.0 upstream artwork/repository license; third-party trademarks remain with their owners. No endorsement implied. Official inspected standalone icon is white on white cards; unmodified monochrome Simple Icons variant selected.",
+      "original_sha256": "af0bdd5fd3f16a49e341089049418af7b02a04eefdc088b2e26c4524fa8b75d1",
+      "normalized_sha256": "b883d3d86f04e65e42d3a73d41cdac860f544be6d91b46d55e051835d8207a57",
+      "viewbox_width": 24.0,
+      "viewbox_height": 24.0,
+      "normalization": "explicit intrinsic dimensions, maximum 256px; viewBox/geometry/colors retained"
+    }
+  },
+  "nodes": 4,
+  "edges": 4,
+  "pixel_inspection": "required"
+}

@@ -1,0 +1,74 @@
+{
+  "react": {
+    "name": "React",
+    "path": "react.svg",
+    "sha256": "671afde83899249e6c2883b0d1592fc00886d3c0620d20bcab566cd2caa97f1a",
+    "source": "https://raw.githubusercontent.com/facebook/react/b618bbb4422693bbb8d387180687b3f510300f42/fixtures/dom/public/react-logo.svg",
+    "revision": "b618bbb4422693bbb8d387180687b3f510300f42",
+    "license_note": "MIT upstream artwork/repository license; third-party trademarks remain with their owners. No endorsement implied. Official React repository; standalone atom mark.",
+    "variant": "Unmodified standalone symbol; monochrome library source where noted."
+  },
+  "github": {
+    "name": "GitHub",
+    "path": "github.svg",
+    "sha256": "7421820090b50ac79d7c2bf7c951a433d7098a8a9c474809207bdd45f62d9d46",
+    "source": "https://raw.githubusercontent.com/primer/octicons/97825f832c98f817867f770d084c08e3edc6f78c/icons/mark-github-16.svg",
+    "revision": "97825f832c98f817867f770d084c08e3edc6f78c",
+    "license_note": "MIT upstream artwork/repository license; third-party trademarks remain with their owners. No endorsement implied. Official GitHub Primer Octicons; standalone mark.",
+    "variant": "Unmodified standalone symbol; monochrome library source where noted."
+  },
+  "vite": {
+    "name": "Vite",
+    "path": "vite.svg",
+    "sha256": "642bb261d6476ddf326b8ed7757543b3443a93a77fef1e434021fc201defa21c",
+    "source": "https://raw.githubusercontent.com/simple-icons/simple-icons/98820a4dc8c363ca72fa2c0d294ea4a0a9bba75d/icons/vite.svg",
+    "revision": "98820a4dc8c363ca72fa2c0d294ea4a0a9bba75d",
+    "license_note": "CC0-1.0 upstream artwork/repository license; third-party trademarks remain with their owners. No endorsement implied. Official current symbol uses unsupported SVG filters; unmodified monochrome Simple Icons variant selected for this restricted helper.",
+    "variant": "Unmodified standalone symbol; monochrome library source where noted."
+  },
+  "fastapi": {
+    "name": "FastAPI",
+    "path": "fastapi.svg",
+    "sha256": "af0bdd5fd3f16a49e341089049418af7b02a04eefdc088b2e26c4524fa8b75d1",
+    "source": "https://raw.githubusercontent.com/simple-icons/simple-icons/98820a4dc8c363ca72fa2c0d294ea4a0a9bba75d/icons/fastapi.svg",
+    "revision": "98820a4dc8c363ca72fa2c0d294ea4a0a9bba75d",
+    "license_note": "CC0-1.0 upstream artwork/repository license; third-party trademarks remain with their owners. No endorsement implied. Official inspected standalone icon is white on white cards; unmodified monochrome Simple Icons variant selected.",
+    "variant": "Unmodified standalone symbol; monochrome library source where noted."
+  },
+  "python": {
+    "name": "Python",
+    "path": "python.svg",
+    "sha256": "ad9468e1c4903f73ae7eebfbe980f0f727a10db695be3d914e7d8bd25356a862",
+    "source": "https://raw.githubusercontent.com/simple-icons/simple-icons/98820a4dc8c363ca72fa2c0d294ea4a0a9bba75d/icons/python.svg",
+    "revision": "98820a4dc8c363ca72fa2c0d294ea4a0a9bba75d",
+    "license_note": "CC0-1.0 upstream artwork/repository license; third-party trademarks remain with their owners. No endorsement implied. Official inspected SVG includes metadata outside helper subset; unmodified monochrome Simple Icons variant selected.",
+    "variant": "Unmodified standalone symbol; monochrome library source where noted."
+  },
+  "docker": {
+    "name": "Docker",
+    "path": "docker.svg",
+    "sha256": "65571291c261ef869c31540a38f3ca0f0ee3bb73f179c172211c8860f19a6359",
+    "source": "https://raw.githubusercontent.com/simple-icons/simple-icons/98820a4dc8c363ca72fa2c0d294ea4a0a9bba75d/icons/docker.svg",
+    "revision": "98820a4dc8c363ca72fa2c0d294ea4a0a9bba75d",
+    "license_note": "CC0-1.0 upstream artwork/repository license; third-party trademarks remain with their owners. No endorsement implied. Official media kit located; pinned standalone SVG not established in this pass. Unmodified Simple Icons variant selected.",
+    "variant": "Unmodified standalone symbol; monochrome library source where noted."
+  },
+  "sqlite": {
+    "name": "SQLite",
+    "path": "sqlite.svg",
+    "sha256": "71d4153bc9661dfe6b92dad70f737ec2b6c7c839311e502b4ca66fe664fe12b6",
+    "source": "https://raw.githubusercontent.com/simple-icons/simple-icons/98820a4dc8c363ca72fa2c0d294ea4a0a9bba75d/icons/sqlite.svg",
+    "revision": "98820a4dc8c363ca72fa2c0d294ea4a0a9bba75d",
+    "license_note": "CC0-1.0 upstream artwork/repository license; third-party trademarks remain with their owners. No endorsement implied. Usable official standalone SVG not established in this pass. Unmodified Simple Icons variant selected.",
+    "variant": "Unmodified standalone symbol; monochrome library source where noted."
+  },
+  "qdrant": {
+    "name": "Qdrant",
+    "path": "qdrant.svg",
+    "sha256": "c5fbbbf771648975f22973627b4eb5620c68a4f81ccfb6c21633bb1d04f9fdf1",
+    "source": "https://raw.githubusercontent.com/simple-icons/simple-icons/98820a4dc8c363ca72fa2c0d294ea4a0a9bba75d/icons/qdrant.svg",
+    "revision": "98820a4dc8c363ca72fa2c0d294ea4a0a9bba75d",
+    "license_note": "CC0-1.0 upstream artwork/repository license; third-party trademarks remain with their owners. No endorsement implied. Inspected official logo is a horizontal wordmark lockup; unmodified standalone Simple Icons variant selected.",
+    "variant": "Unmodified standalone symbol; monochrome library source where noted."
+  }
+}

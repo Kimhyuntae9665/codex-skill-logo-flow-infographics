@@ -1,0 +1,39 @@
+{
+  "status": "proposed",
+  "basis": "Authored documentation example only; no project or deployment inspected.",
+  "assets": {
+    "vite": {
+      "name": "Vite",
+      "source": "https://raw.githubusercontent.com/simple-icons/simple-icons/98820a4dc8c363ca72fa2c0d294ea4a0a9bba75d/icons/vite.svg",
+      "license_note": "CC0-1.0 upstream artwork/repository license; third-party trademarks remain with their owners. No endorsement implied. Official current symbol uses unsupported SVG filters; unmodified monochrome Simple Icons variant selected for this restricted helper.",
+      "original_sha256": "642bb261d6476ddf326b8ed7757543b3443a93a77fef1e434021fc201defa21c",
+      "normalized_sha256": "14de63a79b722a788d7b3ae8f0c33096d37703d951f76bb6750d5798f21e4c05",
+      "viewbox_width": 24.0,
+      "viewbox_height": 24.0,
+      "normalization": "explicit intrinsic dimensions, maximum 256px; viewBox/geometry/colors retained"
+    },
+    "python": {
+      "name": "Python",
+      "source": "https://raw.githubusercontent.com/simple-icons/simple-icons/98820a4dc8c363ca72fa2c0d294ea4a0a9bba75d/icons/python.svg",
+      "license_note": "CC0-1.0 upstream artwork/repository license; third-party trademarks remain with their owners. No endorsement implied. Official inspected SVG includes metadata outside helper subset; unmodified monochrome Simple Icons variant selected.",
+      "original_sha256": "ad9468e1c4903f73ae7eebfbe980f0f727a10db695be3d914e7d8bd25356a862",
+      "normalized_sha256": "caf60c3c1b617d31143258a6026aec87bc5166271538b7e6fc6968b72b1d8fab",
+      "viewbox_width": 24.0,
+      "viewbox_height": 24.0,
+      "normalization": "explicit intrinsic dimensions, maximum 256px; viewBox/geometry/colors retained"
+    },
+    "github": {
+      "name": "GitHub",
+      "source": "https://raw.githubusercontent.com/primer/octicons/97825f832c98f817867f770d084c08e3edc6f78c/icons/mark-github-16.svg",
+      "license_note": "MIT upstream artwork/repository license; third-party trademarks remain with their owners. No endorsement implied. Official GitHub Primer Octicons; standalone mark.",
+      "original_sha256": "7421820090b50ac79d7c2bf7c951a433d7098a8a9c474809207bdd45f62d9d46",
+      "normalized_sha256": "aa542b85d3c49de8eb8d87b0c10d42a6a6ec3375ab12c77492a580a681073528",
+      "viewbox_width": 16.0,
+      "viewbox_height": 16.0,
+      "normalization": "explicit intrinsic dimensions, maximum 256px; viewBox/geometry/colors retained"
+    }
+  },
+  "nodes": 3,
+  "edges": 2,
+  "pixel_inspection": "required"
+}

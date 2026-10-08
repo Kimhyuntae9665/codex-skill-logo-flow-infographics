@@ -1,0 +1,46 @@
+{
+  "title": "Two independent proposed paths",
+  "status": "proposed",
+  "basis": "Authored documentation example only; no project or deployment inspected.",
+  "description": "The upper proposed path is Vite producing React frontend artifacts. The lower is a Python job storing data in SQLite. No edge connects the two paths.",
+  "asset_manifest": "../assets/manifest.json",
+  "width": 800,
+  "height": 510,
+  "nodes": [
+    {
+      "id": "build",
+      "asset": "vite",
+      "x": 100,
+      "y": 95
+    },
+    {
+      "id": "ui",
+      "asset": "react",
+      "x": 560,
+      "y": 95
+    },
+    {
+      "id": "job",
+      "asset": "python",
+      "x": 100,
+      "y": 285
+    },
+    {
+      "id": "sql",
+      "asset": "sqlite",
+      "x": 560,
+      "y": 285
+    }
+  ],
+  "edges": [
+    {
+      "source": "build",
+      "target": "ui"
+    },
+    {
+      "source": "job",
+      "target": "sql"
+    }
+  ],
+  "disclaimer": "Proposed example / no deployed architecture"
+}

@@ -1,0 +1,40 @@
+{
+  "title": "Proposed web request flow",
+  "status": "proposed",
+  "basis": "Authored documentation example only; no project or deployment inspected.",
+  "description": "React sends a proposed web request to FastAPI, which reads or writes SQLite. Arrows denote proposed request/data direction, not a verified integration.",
+  "asset_manifest": "../assets/manifest.json",
+  "width": 800,
+  "height": 300,
+  "nodes": [
+    {
+      "id": "ui",
+      "asset": "react",
+      "x": 90,
+      "y": 70
+    },
+    {
+      "id": "api",
+      "asset": "fastapi",
+      "x": 340,
+      "y": 70
+    },
+    {
+      "id": "db",
+      "asset": "sqlite",
+      "x": 590,
+      "y": 70
+    }
+  ],
+  "edges": [
+    {
+      "source": "ui",
+      "target": "api"
+    },
+    {
+      "source": "api",
+      "target": "db"
+    }
+  ],
+  "disclaimer": "Proposed example / no deployed architecture"
+}

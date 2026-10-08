@@ -1,0 +1,39 @@
+{
+  "status": "proposed",
+  "basis": "Authored documentation example only; no project or deployment inspected.",
+  "assets": {
+    "react": {
+      "name": "React",
+      "source": "https://raw.githubusercontent.com/facebook/react/b618bbb4422693bbb8d387180687b3f510300f42/fixtures/dom/public/react-logo.svg",
+      "license_note": "MIT upstream artwork/repository license; third-party trademarks remain with their owners. No endorsement implied. Official React repository; standalone atom mark.",
+      "original_sha256": "671afde83899249e6c2883b0d1592fc00886d3c0620d20bcab566cd2caa97f1a",
+      "normalized_sha256": "757b16354e4b5ea83120374c2a7878b3949ed2e1c2a63533ea850f2e359baf2c",
+      "viewbox_width": 23.0,
+      "viewbox_height": 20.46348,
+      "normalization": "explicit intrinsic dimensions, maximum 256px; viewBox/geometry/colors retained"
+    },
+    "fastapi": {
+      "name": "FastAPI",
+      "source": "https://raw.githubusercontent.com/simple-icons/simple-icons/98820a4dc8c363ca72fa2c0d294ea4a0a9bba75d/icons/fastapi.svg",
+      "license_note": "CC0-1.0 upstream artwork/repository license; third-party trademarks remain with their owners. No endorsement implied. Official inspected standalone icon is white on white cards; unmodified monochrome Simple Icons variant selected.",
+      "original_sha256": "af0bdd5fd3f16a49e341089049418af7b02a04eefdc088b2e26c4524fa8b75d1",
+      "normalized_sha256": "b883d3d86f04e65e42d3a73d41cdac860f544be6d91b46d55e051835d8207a57",
+      "viewbox_width": 24.0,
+      "viewbox_height": 24.0,
+      "normalization": "explicit intrinsic dimensions, maximum 256px; viewBox/geometry/colors retained"
+    },
+    "sqlite": {
+      "name": "SQLite",
+      "source": "https://raw.githubusercontent.com/simple-icons/simple-icons/98820a4dc8c363ca72fa2c0d294ea4a0a9bba75d/icons/sqlite.svg",
+      "license_note": "CC0-1.0 upstream artwork/repository license; third-party trademarks remain with their owners. No endorsement implied. Usable official standalone SVG not established in this pass. Unmodified Simple Icons variant selected.",
+      "original_sha256": "71d4153bc9661dfe6b92dad70f737ec2b6c7c839311e502b4ca66fe664fe12b6",
+      "normalized_sha256": "b8dd4d0bb7ce19e0211f5645c09eacbbc280358f084a57e11e65aacb3282eb57",
+      "viewbox_width": 24.0,
+      "viewbox_height": 24.0,
+      "normalization": "explicit intrinsic dimensions, maximum 256px; viewBox/geometry/colors retained"
+    }
+  },
+  "nodes": 3,
+  "edges": 2,
+  "pixel_inspection": "required"
+}

@@ -1,0 +1,54 @@
+{
+  "title": "Proposed storage and retrieval flow",
+  "status": "proposed",
+  "basis": "Authored documentation example only; no project or deployment inspected.",
+  "description": "Python prepares structured records and vector data for SQLite and Qdrant. FastAPI receives retrieval results from both proposed stores. Arrows mean data delivery; this is not a deployed RAG application.",
+  "asset_manifest": "../assets/manifest.json",
+  "width": 800,
+  "height": 510,
+  "nodes": [
+    {
+      "id": "job",
+      "asset": "python",
+      "x": 90,
+      "y": 190
+    },
+    {
+      "id": "sql",
+      "asset": "sqlite",
+      "x": 340,
+      "y": 95
+    },
+    {
+      "id": "vector",
+      "asset": "qdrant",
+      "x": 340,
+      "y": 285
+    },
+    {
+      "id": "api",
+      "asset": "fastapi",
+      "x": 590,
+      "y": 190
+    }
+  ],
+  "edges": [
+    {
+      "source": "job",
+      "target": "sql"
+    },
+    {
+      "source": "job",
+      "target": "vector"
+    },
+    {
+      "source": "sql",
+      "target": "api"
+    },
+    {
+      "source": "vector",
+      "target": "api"
+    }
+  ],
+  "disclaimer": "Proposed example / no deployed architecture"
+}

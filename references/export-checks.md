@@ -7,6 +7,7 @@ A controlled 2026-09-30 test used four Lobe SVG assets at 329f378cbd1a88f45b60cd
 - Preserve gradients, clipping, colors and needed descriptions. Do not rely on OS adaptive light/dark export colors
 - Verify Korean glyphs and fonts. SVG text depends on recipient fonts unless separately addressed; PNG does not
 - Inspect real output pixels. Renderer exit 0 alone is insufficient
+- Inspect the card and label separately: the white rectangle contains only the verified logo symbol, with no wordmark or other lettering; a readable technology name is centered directly below every card. Check exported artwork itself, including lettering baked into PNGs or SVG paths, rather than only counting text elements
 - Keep source and asset manifest. Claim an editing round-trip only after actually reopening and editing the export
 - Embedded source/all-pages export may include hidden information; inspect before sharing
 

@@ -1,0 +1,40 @@
+{
+  "title": "Proposed dual storage flow",
+  "status": "proposed",
+  "basis": "Authored documentation example only; no project or deployment inspected.",
+  "description": "A proposed Python job writes structured records to SQLite and vectors to Qdrant. Branches represent different destinations; scheduling and atomicity are unspecified.",
+  "asset_manifest": "../assets/manifest.json",
+  "width": 800,
+  "height": 510,
+  "nodes": [
+    {
+      "id": "job",
+      "asset": "python",
+      "x": 100,
+      "y": 190
+    },
+    {
+      "id": "sql",
+      "asset": "sqlite",
+      "x": 560,
+      "y": 95
+    },
+    {
+      "id": "vector",
+      "asset": "qdrant",
+      "x": 560,
+      "y": 285
+    }
+  ],
+  "edges": [
+    {
+      "source": "job",
+      "target": "sql"
+    },
+    {
+      "source": "job",
+      "target": "vector"
+    }
+  ],
+  "disclaimer": "Proposed example / no deployed architecture"
+}
