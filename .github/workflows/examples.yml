@@ -1,5 +1,7 @@
 name: Verify example graphs
 on: [push, pull_request, workflow_dispatch]
+permissions:
+  contents: read
 jobs:
   render:
     strategy:
@@ -7,8 +9,8 @@ jobs:
         os: [ubuntu-latest, windows-latest]
     runs-on: ${{ matrix.os }}
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - uses: actions/checkout@v7.0.1
+      - uses: actions/setup-python@v7.0.0
         with:
           python-version: '3.9'
       - name: Rebuild all SVGs and validate pinned assets
