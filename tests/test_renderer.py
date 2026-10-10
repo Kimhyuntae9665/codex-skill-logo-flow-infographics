@@ -48,6 +48,31 @@ class RendererContracts(unittest.TestCase):
             with self.assertRaisesRegex(ValueError, 'hash mismatch'):
                 local_svg(entry, folder)
 
+    def test_role_is_separate_visible_escaped_label_and_recorded(self):
+        graph = json.loads((ROOT/'examples/01-linear/graph.json').read_text(encoding='utf-8'))
+        graph['asset_manifest'] = str(ROOT/'examples/assets/manifest.json')
+        role = 'Creative / 독창적 제안 <&>'
+        graph['nodes'][0]['role'] = role
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory)/'graph.json'
+            path.write_text(json.dumps(graph), encoding='utf-8')
+            svg, manifest = build(path)
+        group = ET.fromstring(svg).find('s:g', NS)
+        card = group.find('s:rect', NS)
+        labels = group.findall('s:text', NS)
+        self.assertEqual(len(labels), 2)
+        self.assertEqual(labels[1].text, role)
+        self.assertGreater(float(labels[1].get('y')), float(labels[0].get('y')))
+        self.assertGreater(float(labels[0].get('y')), float(card.get('y'))+100)
+        self.assertEqual(manifest['node_roles'][graph['nodes'][0]['id']], role)
+        self.assertEqual(group.get('aria-label'), labels[0].text+': '+role)
+
+    def test_role_cannot_be_multiline(self):
+        self.modified_graph(lambda g: g['nodes'][0].update(role='Skeptic\nextra'), 'single line')
+
+    def test_role_requires_room_below_card(self):
+        self.modified_graph(lambda g: g['nodes'][0].update(role='Skeptic', y=g['height']-170), 'node y')
+
     def test_nonsquare_logo_keeps_proportions(self):
         with tempfile.TemporaryDirectory() as directory:
             folder = Path(directory)

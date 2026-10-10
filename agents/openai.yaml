@@ -1,7 +1,7 @@
 interface:
   display_name: Logo Flow Infographics
-  short_description: "Real logo symbols in cards, technology names below"
-  default_prompt: "Use $logo-flow-infographics to draw a compact flow with verified standalone logo symbols only inside white cards and accurate technology names centered directly below each card."
+  short_description: "Logo cards with technology names and agent roles"
+  default_prompt: "Use $logo-flow-infographics to draw a compact flow with verified standalone logos inside white cards, accurate technology names below, and a second short role line for every agent or repeated technology with a distinct job."
   icon_small: assets/icon.svg
   icon_large: assets/icon.svg
 policy:

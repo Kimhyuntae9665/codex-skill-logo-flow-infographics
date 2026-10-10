@@ -2,7 +2,7 @@
 
 **실제 로고로 기술 흐름을 짧고 명확하게 그리는 Codex 스킬.**
 
-어두운 점무늬 배경 위에 흰색 카드와 곡선 화살표를 배치합니다. **카드 안에는 로고 심볼만, 카드 바로 아래에는 기술명**을 넣습니다. PNG로 공유하고, SVG와 JSON으로 수정할 수 있습니다.
+어두운 점무늬 배경 위에 흰색 카드와 곡선 화살표를 배치합니다. **카드 안에는 로고 심볼만, 카드 바로 아래에는 기술명**을 넣습니다. 에이전트 흐름에서는 그 아래에 **각 에이전트의 짧은 역할**도 표시합니다. PNG로 공유하고, SVG와 JSON으로 수정할 수 있습니다.
 
 *A Codex skill for logo-first architecture and workflow diagrams: real symbols inside cards, short technology names below, editable SVG, and pinned asset provenance.*
 
@@ -24,7 +24,21 @@ React → FastAPI → Python 흐름을 그려줘.
 
 **이 스킬은 그림을 만듭니다.** API 서버를 실행하거나 화살표에 해당하는 시스템을 구현하지는 않습니다. 실제 프로젝트를 그릴 때에는 코드나 사용자가 제공한 흐름에서 확인한 연결만 표현합니다.
 
-## 설치
+## 에이전트 역할을 그림에서 바로 읽기
+
+같은 Astra·Sol 로고가 여러 번 나오면 모델명만으로 담당을 구별하기 어렵습니다. 에이전트 다이어그램에는 `모델명 → 짧은 역할`의 두 줄을 카드 아래에 표시합니다. 예: **GPT-6 Astra / Skeptic · 반례 검토**, **GPT-6 Astra / Creative · 독창적 제안**. 실제로 정의된 역할만 사용하며, 임의로 긍정론자·비관론자라고 붙이지 않습니다. 로고 카드 안에는 계속 심볼만 둡니다.
+
+JSON의 노드에 `role`을 넣으면 렌더러가 두 번째 줄을 추가합니다. 같은 브랜드 이름이나 로고를 역할 이름으로 바꾸지 않습니다.
+
+```json
+{"id": "creative", "asset": "astra", "x": 340, "y": 190, "role": "Creative / 독창적 제안"}
+```
+
+에이전트마다 표시하고, 줄 간격·다음 카드·캔버스 경계를 SVG와 PNG에서 확인합니다. 일반 기술 흐름의 `role`은 선택 사항이며 같은 기술이 다른 역할로 반복되면 구분 라벨을 붙입니다. `role`은 32자 이내 한 줄입니다. [역할이 표시된 Council 예시](https://github.com/Kimhyuntae9665/codex-skill-council#흐름을-한눈에-보기)를 참고하세요.
+
+*Agent diagrams add a short node-level `role` below each technology/model name. Names identify the technology; roles identify the job. Both remain outside the logo card and visible in SVG/PNG. Existing graphs without role labels still render as before.*
+
+## 설치 방법
 
 필요한 것: Git, Codex 또는 `SKILL.md`를 읽는 에이전트. Python은 로컬 렌더링 도구를 직접 실행할 때 필요합니다.
 

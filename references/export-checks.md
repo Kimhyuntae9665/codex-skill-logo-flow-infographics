@@ -9,6 +9,7 @@ A controlled 2026-09-30 test used four Lobe SVG assets at 329f378cbd1a88f45b60cd
 - Inspect real output pixels. Renderer exit 0 alone is insufficient
 - Inspect the card and label separately: the white rectangle contains only the verified logo symbol, with no wordmark or other lettering; a readable technology name is centered directly below every card. Check exported artwork itself, including lettering baked into PNGs or SVG paths, rather than only counting text elements
 - Keep source and asset manifest. Claim an editing round-trip only after actually reopening and editing the export
+- For every agent node or repeated technology with a distinct job, verify the short role line against the inspected workflow. The technology/model name stays above the role, both outside the logo card. Check that both lines survive SVG and PNG export, remain legible at README display size, and do not collide with the next row or canvas edge. A separate legend alone is insufficient
 - Embedded source/all-pages export may include hidden information; inspect before sharing
 
 The helper is a local static SVG authoring aid, not a workflow runtime, browser controller, installer, draw.io authoring tool or deployment system.

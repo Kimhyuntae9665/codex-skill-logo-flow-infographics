@@ -109,12 +109,15 @@ def build(graph_path):
         if node.get("label",entry["name"])!=entry["name"]:
             fail("Node label must match the asset's accurate name")
         x=number(node.get("x"),0,width-100,"node x")
-        y=number(node.get("y"),0,height-(160 if disclaimer else 130),"node y")
+        role = text(node["role"], "short node role", 32) if "role" in node else ""
+        if role and ("\n" in role or "\r" in role):
+            fail("Node role must be a single line")
+        y=number(node.get("y"),0,height-((182 if disclaimer else 152) if role else (160 if disclaimer else 130)),"node y")
         uri,record=local_svg(entry,manifest_path.parent)
         ids[ident]=(x,y)
         fit=64/max(record["viewbox_width"],record["viewbox_height"])
         iw=record["viewbox_width"]*fit; ih=record["viewbox_height"]*fit
-        prepared.append((ident,x,y,entry["name"],uri,iw,ih))
+        prepared.append((ident,x,y,entry["name"],uri,iw,ih,role))
         provenance[node["asset"]]=record
     esc=lambda s:html.escape(str(s),quote=True)
     parts=[f'<svg xmlns="{NS}" xmlns:xlink="http://www.w3.org/1999/xlink" width="{width}" height="{height}" viewBox="0 0 {width} {height}" role="img" aria-labelledby="flow-title flow-desc"><title id="flow-title">{esc(title)}</title><desc id="flow-desc">{esc(description)}</desc>',
@@ -127,13 +130,21 @@ def build(graph_path):
             fail("Helper requires forward left-to-right edges with space between cards")
         mid=(sx+tx)/2
         parts.append(f'<path d="M{sx} {sy}C{mid} {sy} {mid} {ey} {tx} {ey}" fill="none" stroke="#aeb8cb" stroke-width="2.5" marker-end="url(#flow-arrow)"/>')
-    for ident,x,y,label,uri,iw,ih in prepared:
-        parts.append(f'<g aria-label="{esc(label)}"><rect x="{x}" y="{y}" width="100" height="100" rx="18" fill="#fff" stroke="#8793a8" stroke-width="1.5"/><image x="{x+(100-iw)/2}" y="{y+(100-ih)/2}" width="{iw}" height="{ih}" preserveAspectRatio="xMidYMid meet" xlink:href="{uri}"/><text x="{x+50}" y="{y+124}" text-anchor="middle" font-family="Noto Sans CJK KR, sans-serif" font-size="16" font-weight="500" fill="#d2daea">{esc(label)}</text></g>')
+    for ident,x,y,label,uri,iw,ih,role in prepared:
+        accessible = label + (": " + role if role else "")
+        parts.append(f'<g aria-label="{esc(accessible)}"><rect x="{x}" y="{y}" width="100" height="100" rx="18" fill="#fff" stroke="#8793a8" stroke-width="1.5"/><image x="{x+(100-iw)/2}" y="{y+(100-ih)/2}" width="{iw}" height="{ih}" preserveAspectRatio="xMidYMid meet" xlink:href="{uri}"/><text x="{x+50}" y="{y+124}" text-anchor="middle" font-family="Noto Sans CJK KR, sans-serif" font-size="16" font-weight="500" fill="#d2daea">{esc(label)}</text>')
+        if role:
+            parts.append(f'<text x="{x+50}" y="{y+146}" text-anchor="middle" font-family="Malgun Gothic, Noto Sans CJK KR, sans-serif" font-size="14" font-weight="600" fill="#8fdfcf">{esc(role)}</text>')
+        parts.append('</g>')
     if disclaimer:
         parts.append(f'<text x="{width/2}" y="{height-45}" text-anchor="middle" font-family="Noto Sans CJK KR, sans-serif" font-size="16" fill="#d2daea">{esc(disclaimer)}</text>')
     parts.append("</svg>")
-    return "".join(parts),{"status":graph["status"],"basis":graph["basis"],"assets":provenance,
-                           "nodes":len(nodes),"edges":len(edges),"pixel_inspection":"required"}
+    manifest = {"status":graph["status"],"basis":graph["basis"],"assets":provenance,
+                "nodes":len(nodes),"edges":len(edges),"pixel_inspection":"required"}
+    roles = {ident: role for ident,_,_,_,_,_,_,role in prepared if role}
+    if roles:
+        manifest['node_roles'] = roles
+    return "".join(parts), manifest
 
 def main():
     parser=argparse.ArgumentParser(description=__doc__)
